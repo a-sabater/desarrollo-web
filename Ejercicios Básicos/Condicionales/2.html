@@ -1,0 +1,38 @@
+<html>
+    <head>
+    <meta charset="UTF-8">
+        <tittle>2. Hacer un programa que nos diga el día de la semana en el que nos encontramos.</tittle>
+          </head>
+<body>
+        <p id="demo"></p>
+    
+      <script>
+var day;
+switch (new Date().getDay()) {
+    case 0:
+        day = "Domingo";
+        break;
+    case 1:
+        day = "Lunes";
+        break;
+    case 2:
+        day = "Martes";
+        break;
+    case 3:
+        day = "Miércoles";
+        break;
+    case 4:
+        day = "Jueves";
+        break;
+    case 5:
+        day = "Viernes";
+        break;
+    case  6:
+        day = "Sábado";
+}
+document.getElementById("demo").innerHTML = "Hoy es  " + day;
+            
+    </script>
+       
+    </body>
+</html>

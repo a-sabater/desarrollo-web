@@ -1,0 +1,21 @@
+<html>
+    <head>
+    <meta charset="UTF-8">
+        <tittle>5. Hacer un programa que nos muestre todos los días de la semana.</tittle>
+          </head>
+<body>
+        <p id="demo"></p>
+    
+      <script>
+var diasSemana = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"];
+var i, len, texto;
+for (i = 0, len = diasSemana.length, texto = ""; i < len; i++) {
+    texto += diasSemana[i] + "<br>";
+}
+
+document.getElementById("demo").innerHTML = texto;
+                    
+    </script>
+       
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+    <head>
+    <meta charset="UTF-8">
+        <tittle>4. Hacer un programa similar al anterior pero que además nos diga si está suspendo, aprobado, notable, sobresaliente o matrícula de honor.</tittle>
+          </head>
+<body>
+        <p id="demo"></p>
+    
+      <script>
+var nota = 10;
+			if (nota < 5) {
+				texto = "Suspenso";
+			} else if (nota == 5 || nota == 6){
+				texto = "Aprobado";
+			} else if (nota == 7 || nota == 8){
+				texto = "Notable";
+			} else if (nota == 9) {
+				texto = "Sobresaliente";
+			}	else { 
+                texto = "Matrícula de honor";
+            }
+          
+document.getElementById("demo").innerHTML = texto ;
+            
+    </script>
+       
+    </body>
+</html>
