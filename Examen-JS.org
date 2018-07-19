@@ -132,10 +132,10 @@
 :points:    1
 :END:
  
-    1) "_"
+    1) "+" [X]
     2) "%"
     3) "."
-    4) Ninguna de las anteriores [X]
+    4) Ninguna de las anteriores
 
 * En JavaScript, ¿cómo se llama a una función llamada "miFuncion"?
 :PROPERTIES:
