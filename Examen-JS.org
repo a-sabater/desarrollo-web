@@ -306,3 +306,24 @@
    2) Git push [X]
    3) Git add
    4) Ninguno de los anteriores
+* Resultados 
+
+#+BEGIN_SRC emacs-lisp 
+(setq total-points 0)    ; counter for the total points
+
+;; now loop over headlines
+(org-element-map 
+    (org-element-parse-buffer 'headline) 'headline 
+  ;; function to print headline title and points
+  (lambda (headline) 
+    (let ((points (org-element-property :POINTS headline))
+          (title  (org-element-property :title headline)))
+      (if points (progn
+                   (setq total-points (+ total-points (string-to-number points)))
+                   (princ (format "title=%s\nPOINTS=%s\n\n" title points)))))))
+
+(princ (format "Puntos totales = %s" total-points))
+#+END_SRC
+
+#+RESULTS:
+: Puntos totales = 29
