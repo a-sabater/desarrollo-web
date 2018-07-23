@@ -2,8 +2,7 @@
     <meta charset="UTF-8">
 <head>
         <link href=”style.css” rel=”stylesheet”>
-       <script src="js/index.js">
-        </script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <div class="menu-bar">
         <p class="nombre-barra">Ana Sabater</p>
       <a href="index.html" class="menu-button">Sobre mí</a>
@@ -25,12 +24,43 @@
     <h1> Mi Portfolio</h1>
 </head>
 <body>
+    
+    <style type="text/css">
+    #imgp{ opacity: 1.0;     }
+    #imgp.claro{ opacity: 0.6; }
+</style>
+    
+        <style type="text/css">
+    #imgp2{ opacity: 1.0; }
+    #imgp2.claro{ opacity: 0.6; }
+</style>
+    
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#imgp").hover(function(){
+        $("#imgp").addClass("claro");
+    }, function(){
+        $("#imgp").removeClass("claro");
+    });
+                     });
+    </script>     
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#imgp2").hover(function(){
+        $("#imgp2").addClass("claro");
+    }, function(){
+        $("#imgp2").removeClass("claro");
+    });
+                     });
+</script>
+    
     <div class= portfolio>
         <a href="proyectos-datos.html">
-    <img src="img/analisis-datos.jpg" alt="Análisis Datos" title="Mis análisis de datos">
-         </a> 
+    <img id="imgp" src="img/analisis-datos.jpg" alt="Análisis Datos" title="Mis análisis de datos">
+         </a>
+        
         <a href="proyectos-web.html">
-    <img src="img/desarrollo-web.jpg" alt="Desarrollo Web" title="Mis proyectos Web">
+    <img id="imgp2" src="img/desarrollo-web.jpg" alt="Desarrollo Web" title="Mis proyectos Web">
          </a> 
     </div>
 
