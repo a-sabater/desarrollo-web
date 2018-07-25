@@ -1,31 +1,71 @@
 <html lang="es_ES">
     <meta charset="UTF-8">
 <head>
-        <link href=”style.css” rel=”stylesheet”>
-       <script src="js/index.js">
-        </script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <div class="menu-bar">
-        <p class="nombre-barra">Ana Sabater</p>
-      <a href="index.html" class="menu-button">Sobre mí</a>
-      <a href="portfolio.html" class="menu-button">Portfolio</a>
-      <a href="contacto.html" class="menu-button">Contacto</a>
-            <div barra-contacto>
-    <a href="mailto:a.sabater411@gmail.com">
+    <style type="text/css">
+    body {
+  margin: 0;
+  font-size: 28px;
+}
+
+.navbar-text{
+            font-size: 45px;
+        }
+.nav-item{
+       margin-top: 10px;     
+        }
+.navbar-brand{
+       margin-top: 10px;     
+        }
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+
+}
+
+</style>
+    <div id="menubar">
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="navbar-nav position-sticky">
+        <div class="col-md-4">
+  <span class="navbar-text font-weight-bold">
+   Ana Sabater
+            </span></div>
+          <div class="col-md-6">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">Sobre mí</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="portfolio.html">Portfolio</a>
+    </li>
+      <li class="nav-item">
+      <a class="nav-link" href="contacto.html">Contacto</a>
+      </li>
+              </ul> </div>
+          <div class="col-md-4">
+      <ul class="nav navbar-nav navbar-right">
+    <li><a class="navbar-brand" href="mailto:a.sabater411@gmail.com">
     <img src="img/gmail.png" alt="Gmail" title="Envíame un email" width="45">
-         </a>
-    <a href="https://www.linkedin.com/in/ana-sabater-aguado/">
+        </a></li>
+    <li><a class="navbar-brand" href="https://www.linkedin.com/in/ana-sabater-aguado/">
     <img src="img/linkedin.jpg" alt="LinkedIn" title="Conecta conmigo" width="45">
-         </a>
-     <a href="https://github.com/a-sabater">
+        </a></li>
+    <li> <a class="navbar-brand" href="https://github.com/a-sabater">
     <img src="img/github.png" alt="GitHub" title="Mi GitHub" width="45">
-         </a>   
-            
-     <a href="">
+        </a> </li> 
+      <li><a class="navbar-brand" href="">
     <img src="img/pdf.png" alt="PDF" title="Mi CV en PDF" width="45">
-    </a>
+          </a> </li>     
+        
+  </ul>
+        </div> 
+      </div>
+</nav>
     </div>
-    </div>
+  
   <title>Ana Sabater Aguado</title>
     <h1> ¡Hola, soy Ana Sabater!</h1>
 </head>
