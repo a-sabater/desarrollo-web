@@ -1,90 +1,90 @@
 <html lang="es_ES">
     <meta charset="UTF-8">
 <head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <style type="text/css">
-    body {
-  margin: 0;
+    body{
+  position: relative;
+  display: block;
+  height: 1000px;
+  overflow-y: scroll;
+margin: 0;
   font-size: 28px;
 }
-
-.navbar-text{
-            font-size: 45px;
+        h1{
+            text-align: center;
+            font-weight: bold;
+            margin: 20px 20px;
         }
-.nav-item{
-       margin-top: 10px;     
-       text-align: center;
+li.active{
+     font-size: 18px; 
+    text-align: center;
         }
-.navbar-brand{
-       margin-top: 10px;
-    
+        .navbar-brand{
+            font-size: 28px;
         }
-#navbar {
-  overflow: hidden;
-  background-color: #333;
-
-}
-
+img.contact{
+            
+         margin: 30px 20px;   
+        }
 </style>
-    <div id="menubar">
-  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-      <div class="navbar-nav position-sticky">
-        <div class="col-md-7">
-  <span class="navbar-text font-weight-bold">
-   Ana Sabater
-            </span></div>
-          <div class="col-md-9">
-  <ul class="navbar-nav">
-    <li class="nav-item">
-      <a class="nav-link" href="index.html">Sobre mí</a>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+    <div class="navbar-header">
+  <a class="navbar-brand" href="#">Ana Sabater</a>
+          </div>
+        <ul class="nav navbar-nav">
+    <li class="active">
+      <a href="index.html">Sobre mí</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" href="portfolio.html">Portfolio</a>
+    <li class="active">
+      <a href="portfolio.html">Portfolio</a>
     </li>
-      <li class="nav-item">
-      <a class="nav-link" href="contacto.html">Contacto</a>
+      <li class="active">
+      <a href="contacto.html">Contacto</a>
       </li>
-              </ul> </div>
-          <div class="col-md-6">
-      <ul class="nav navbar-nav navbar-right">
+              </ul>
+        
+     <ul class="nav navbar-nav navbar-right">
     <li><a class="navbar-brand" href="mailto:a.sabater411@gmail.com">
-    <img src="img/gmail.png" alt="Gmail" title="Envíame un email" width="45">
+    <img src="img/gmail.png" alt="Gmail" title="Envíame un email" width="30">
         </a></li>
     <li><a class="navbar-brand" href="https://www.linkedin.com/in/ana-sabater-aguado/">
-    <img src="img/linkedin.jpg" alt="LinkedIn" title="Conecta conmigo" width="45">
+    <img src="img/linkedin.jpg" alt="LinkedIn" title="Conecta conmigo" width="30">
         </a></li>
     <li> <a class="navbar-brand" href="https://github.com/a-sabater">
-    <img src="img/github.png" alt="GitHub" title="Mi GitHub" width="45">
+    <img src="img/github.png" alt="GitHub" title="Mi GitHub" width="30">
         </a> </li> 
       <li><a class="navbar-brand" href="">
-    <img src="img/pdf.png" alt="PDF" title="Mi CV en PDF" width="45">
+    <img src="img/pdf.png" alt="PDF" title="Mi CV en PDF" width="30">
           </a> </li>     
         
   </ul>
-        </div> 
-      </div>
+        </div>         
 </nav>
-    </div>
+    
   <title>Ana Sabater Aguado</title>
     <h1>Contacta conmigo</h1>
 </head>
 <body>
-        <div class="contactos-link">
-    <img src="img/gmail-grande.png" alt="Gmail" width="150">
+   <div class="container text-center">
+  <div class="contact col-md-8 col-md-offset-2 text-center">
+    <img class="contact" src="img/gmail-grande.png" alt="Gmail" width="150">
     <a href="mailto:a.sabater411@gmail.com">Envíame un email
          </a><br>
-    <img src="img/linkedin-grande.png" alt="LinkedIn" width="100">
+    <img class="contact" src="img/linkedin-grande.png" alt="LinkedIn" width="100">
     <a href="https://www.linkedin.com/in/ana-sabater-aguado/">Contacta conmigo
          </a><br>
      <a href="https://github.com/a-sabater">
     <img src="img/github-grande.png" alt="GitHub" title="Mi GitHub" width="150">Mis repositorios en GitHub
          </a><br>         
-    <img src="img/pdf-grande.png" alt="PDF" width="100">
+    <img class="contact" src="img/pdf-grande.png" alt="PDF" width="100">
     <a href="">Mi CV en PDF
          </a><br>
-    </div>
+       </div> </div>
 </body>
 
 </html>
