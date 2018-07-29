@@ -1,72 +1,98 @@
-<html lang="es_ES">
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <style type="text/css">
-    body{
-  position: relative;
-  display: block;
-  height: 1000px;
-  overflow-y: scroll;
-margin: 0;
-  font-size: 28px; 
-}
-
-li.active{
-     font-size: 18px; 
-    text-align: center;
-        }
-        .navbar-brand{
-            font-size: 28px;
-        }
-</style>
-    <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-header">
-  <a class="navbar-brand" href="#">Ana Sabater</a>
+  <a id= "logo" class="navbar-brand" href="#"><img src="img/logo2.JPG" alt="Ana Sabater" height="35" class="img-rounded"></a>
           </div>
         <ul class="nav navbar-nav">
     <li class="active">
-      <a href="index.html">Sobre mí</a>
+      <a href="index.html" target="_blank">Sobre mí</a>
     </li>
     <li class="active">
-      <a href="portfolio.html">Portfolio</a>
+      <a href="portfolio.html" target="_blank">Portfolio</a>
     </li>
       <li class="active">
-      <a href="contacto.html">Contacto</a>
+      <a href="contacto.html" target="_blank">Contacto</a>
       </li>
               </ul>
-        
+        <div class="iconos">
      <ul class="nav navbar-nav navbar-right">
-    <li><a class="navbar-brand" href="mailto:a.sabater411@gmail.com">
+    <li><a class="navbar-brand" href="mailto:a.sabater411@gmail.com" target="_blank">
     <img src="img/gmail.png" alt="Gmail" title="Envíame un email" width="30">
         </a></li>
-    <li><a class="navbar-brand" href="https://www.linkedin.com/in/ana-sabater-aguado/">
+    <li><a class="navbar-brand" href="https://www.linkedin.com/in/ana-sabater-aguado/" target="_blank">
     <img src="img/linkedin.jpg" alt="LinkedIn" title="Conecta conmigo" width="30">
         </a></li>
-    <li> <a class="navbar-brand" href="https://github.com/a-sabater">
+    <li> <a class="navbar-brand" href="https://github.com/a-sabater" target="_blank">
     <img src="img/github.png" alt="GitHub" title="Mi GitHub" width="30">
         </a> </li> 
-      <li><a class="navbar-brand" href="">
+      <li><a class="navbar-brand" href="https://drive.google.com/file/d/1G8i3-0PAuaQ6DAJGUWW8KyKzNVFwDwu5/view?usp=sharing" target="_blank">
     <img src="img/pdf.png" alt="PDF" title="Mi CV en PDF" width="30">
-          </a> </li>     
-        
-  </ul>
-        </div>         
+          </a> </li>    </ul>  </div>
+    
+        <div class="formulario">
+   <ul class="nav navbar-nav navbar-right ml-auto">			
+			<li class="nav-item">
+				<a data-toggle="dropdown" class="btn btn-primary dropdown-toggle get-started-btn mt-1 mb-1" href="#">Login</a>
+				<ul class="dropdown-menu form-wrapper">					
+					<li>
+						<form action="/examples/actions/confirmation.php" method="post">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Username" required="required">
+							</div>
+							<div class="form-group">
+								<input type="password" class="form-control" placeholder="Password" required="required">
+							</div>
+							<input type="submit" class="btn btn-primary btn-block" value="Login">
+							<div class="form-footer">
+								<a href="#">Olvidé mi contraseña</a>
+							</div>
+						</form>
+					</li>
+				</ul>
+			</li>
+			<li class="nav-item">
+				<a href="#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle get-started-btn mt-1 mb-1" id="regist">Regístrate</a>
+				<ul class="dropdown-menu form-wrapper">					
+					<li>
+						<form action="/examples/actions/confirmation.php" method="post">
+							<p class="hint-text">Rellena tus datos para registrarte</p>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Usuario" required="required">
+							</div>
+							<div class="form-group">
+								<input type="password" class="form-control" placeholder="Contraseña" required="required">
+							</div>
+							<div class="form-group">
+								<input type="password" class="form-control" placeholder="Confirmar contraseña" required="required">
+							</div>
+							<div class="form-group">
+								<label class="checkbox-inline"><input type="checkbox" required="required"> Acepto los <a href="#">Términos &amp; Condiciones</a></label>
+							</div>
+							<input type="submit" class="btn btn-primary btn-block" value="Sign up">
+						</form>
+					</li>
+				</ul>
+			</li>
+		</ul>
+        </div>
+
 </nav>
-  <title>Ana Sabater Aguado</title>
-    <h1> Mi Portfolio</h1>
+    
+  <title>Ana Sabater Aguado</title><br><br>
+    
 </head>
 <body>
-    
-    <style type="text/css">
-    #imgp, #imgp2 { opacity: 1.0;     }
-    #imgp.claro, #imgp2.claro{ opacity: 0.6; }
-</style>
-    
+    <h1> Mi Portfolio</h1><br><br>
     
 <script type="text/javascript">
 $(document).ready(function(){
@@ -88,17 +114,27 @@ $(document).ready(function(){
 </script>
     
     <div id= portfolio>
-        <div class="col-md-6">
+        <div class="col-md-4 col-md-offset-2">
         <a href="proyectos-datos.html" target="_blank">
-    <img id="imgp" src="img/analisis-datos.png" alt="Análisis Datos" title="Mis análisis de datos" >
+    <img id="imgp" class="img-responsive" src="img/analisis-datos.png" alt="Análisis Datos" title="Mis análisis de datos">
          </a>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4">
         <a href="proyectos-web.html" target="_blank">
-    <img id="imgp2" src="img/desarrollo-web.png" alt="Desarrollo Web" title="Mis proyectos Web">
-         </a> 
+    <img id="imgp2" class="img-responsive" src="img/desarrollo-web.png" alt="Desarrollo Web" title="Mis proyectos Web">
+         </a>
     </div>
     </div>
+   
+    
+    <div class="row">
+		<div class="col-xs-12">
+			<footer class="footer">
+				<p>&copy; Copyright 2018 Ana Sabater</p>
+			</footer>
+		</div>
+	</div>             
+       
 </body>
 
 </html>

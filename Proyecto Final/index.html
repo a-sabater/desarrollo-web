@@ -2,68 +2,99 @@
 <head>
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <style type="text/css">
-    body{
-  position: relative;
-  display: block;
-  height: 1000px;
-  overflow-y: scroll;
-margin: 0;
-  font-size: 28px; 
-}
-
-li.active{
-     font-size: 18px; 
-    text-align: center;
-        }
-        .navbar-brand{
-            font-size: 28px;
-        }
-</style>
-    <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-header">
-  <a class="navbar-brand" href="#">Ana Sabater</a>
+  <a id= "logo" class="navbar-brand" href="#"><img src="img/logo2.JPG" alt="Ana Sabater" height="35" class="img-rounded"></a>
           </div>
         <ul class="nav navbar-nav">
     <li class="active">
-      <a href="index.html">Sobre mí</a>
+      <a href="index.html" target="_blank">Sobre mí</a>
     </li>
     <li class="active">
-      <a href="portfolio.html">Portfolio</a>
+      <a href="portfolio.html" target="_blank">Portfolio</a>
     </li>
       <li class="active">
-      <a href="contacto.html">Contacto</a>
+      <a href="contacto.html" target="_blank">Contacto</a>
       </li>
               </ul>
-        
+        <div class="iconos">
      <ul class="nav navbar-nav navbar-right">
-    <li><a class="navbar-brand" href="mailto:a.sabater411@gmail.com">
+    <li><a class="navbar-brand" href="mailto:a.sabater411@gmail.com" target="_blank">
     <img src="img/gmail.png" alt="Gmail" title="Envíame un email" width="30">
         </a></li>
-    <li><a class="navbar-brand" href="https://www.linkedin.com/in/ana-sabater-aguado/">
+    <li><a class="navbar-brand" href="https://www.linkedin.com/in/ana-sabater-aguado/" target="_blank">
     <img src="img/linkedin.jpg" alt="LinkedIn" title="Conecta conmigo" width="30">
         </a></li>
-    <li> <a class="navbar-brand" href="https://github.com/a-sabater">
+    <li> <a class="navbar-brand" href="https://github.com/a-sabater" target="_blank">
     <img src="img/github.png" alt="GitHub" title="Mi GitHub" width="30">
         </a> </li> 
-      <li><a class="navbar-brand" href="">
+      <li><a class="navbar-brand" href="https://drive.google.com/file/d/1G8i3-0PAuaQ6DAJGUWW8KyKzNVFwDwu5/view?usp=sharing" target="_blank">
     <img src="img/pdf.png" alt="PDF" title="Mi CV en PDF" width="30">
-          </a> </li>     
-        
-  </ul>
-        </div>         
+          </a> </li>    </ul>  </div>
+    
+        <div class="formulario">
+   <ul class="nav navbar-nav navbar-right ml-auto">			
+			<li class="nav-item">
+				<a data-toggle="dropdown" class="btn btn-primary dropdown-toggle get-started-btn mt-1 mb-1" href="#">Login</a>
+				<ul class="dropdown-menu form-wrapper">					
+					<li>
+						<form action="/examples/actions/confirmation.php" method="post">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Username" required="required">
+							</div>
+							<div class="form-group">
+								<input type="password" class="form-control" placeholder="Password" required="required">
+							</div>
+							<input type="submit" class="btn btn-primary btn-block" value="Login">
+							<div class="form-footer">
+								<a href="#">Olvidé mi contraseña</a>
+							</div>
+						</form>
+					</li>
+				</ul>
+			</li>
+			<li class="nav-item">
+				<a href="#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle get-started-btn mt-1 mb-1" id="regist">Regístrate</a>
+				<ul class="dropdown-menu form-wrapper">					
+					<li>
+						<form action="/examples/actions/confirmation.php" method="post">
+							<p class="hint-text">Rellena tus datos para registrarte</p>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Usuario" required="required">
+							</div>
+							<div class="form-group">
+								<input type="password" class="form-control" placeholder="Contraseña" required="required">
+							</div>
+							<div class="form-group">
+								<input type="password" class="form-control" placeholder="Confirmar contraseña" required="required">
+							</div>
+							<div class="form-group">
+								<label class="checkbox-inline"><input type="checkbox" required="required"> Acepto los <a href="#">Términos &amp; Condiciones</a></label>
+							</div>
+							<input type="submit" class="btn btn-primary btn-block" value="Sign up">
+						</form>
+					</li>
+				</ul>
+			</li>
+		</ul>
+        </div>
+
 </nav>
     
   
   <title>Ana Sabater Aguado</title>
-    <h1> ¡Hola, soy Ana Sabater!</h1>
-    <hr>
+    <br><br>
 </head>
 <body>
+    <h1> ¡Hola, soy Ana Sabater!</h1>
+    <br><br>
     <div class="container">
     <div class="inicio">
         <div class="col-md-4">
@@ -71,7 +102,7 @@ li.active{
         </div>
             <div class="col-md-18">
             <div class="biografia">
-    <h2>Bióloga. Analista Big Data. Desarrolladora Web</h2>
+    <h2>Bióloga. Analista Big Data. Desarrolladora Web.</h2><br>
     <p>Bióloga interesada en la informática. Me he formado en manejo de Big Data y visualización de datos. También tengo conocimientos de Desarrollo Front-End.</p>
     <p>Si tienes un proyecto en mente, ¡no dudes en escribirme!</p>
                 <p>¡Gracias por tu visita!</p>
@@ -79,56 +110,186 @@ li.active{
                 
     </div>
     </div>
-    </div> <hr>
+    </div> <br><br>
+   
     <div class="desarrollo-web">
-    <h1>Desarrollo Web</h1>
-    <table>
-	<thead>
-		<tr><th>LENGUAJES</th><th>SOFTWARE</th>
-		</tr>
-	</thead>
-	<tbody>
-	   <tr><th>HTML5 <img src="img/barra-prog.png" height="120"></th><th>Wordpress <img src="img/barra-prog.png" height="120"></th>
-           </tr>
-		<tr><th>CSS <img src="img/barra-prog.png" height="120"></th><th>Bootstrap <img src="img/barra-prog.png" height="120"></th>
-           </tr>
-        <tr><th>JavaScript <img src="img/barra-prog.png" height="120"></th><th>Balsamiq <img src="img/barra-prog.png" height="120"></th>
-           </tr>
-	</tbody>
-</table>
+    <h1>Desarrollo Web</h1><br><br>
+     <div class="row">
+        <div class="col-md-6">
+            <p><b>LENGUAJES</b></p>
+         </div>
+         <div class="col-md-6">
+         <p><b>SOFTWARE</b></p>
+         </div>
+        </div><br>
+	
+        <div class="row">
+<div class="col-md-2">
+<p>HTML</p> 
     </div>
+<div class="col-md-3">
+<div class="progress">
+    <div class="progress-bar barra1" style="width: 60%;">
+    </div>
+</div>
+    </div>
+<div class="col-md-2">
+<p>WORDPRESS</p> 
+    </div>
+<div class="col-md-3">
+<div class="progress">
+    <div class="progress-bar barra2" style="width: 40%;">
+    </div>
+</div>
+    </div>
+    </div><br>
     
-        <div class="analisis-datos">
-    <h1>Análisis de Datos</h1>
-    <table>
-	<thead>
-		<tr><th>LENGUAJES</th><th>SOFTWARE</th>
-		</tr>
-	</thead>
-	<tbody>
-	   <tr><th>mySQL <img src="img/barra-prog.png" height="120"></th><th>Hadoop <img src="img/barra-prog.png" height="120"></th>
-           </tr>
-		<tr><th>SCALA <img src="img/barra-prog.png" height="120"></th><th>Oracle SQL Developer <img src="img/barra-prog.png" height="120"></th>
-           </tr>
-        <tr><th>JavaScript <img src="img/barra-prog.png" height="120"></th><th>Oracle Database <img src="img/barra-prog.png" height="120"></th>
-           </tr>
-        <tr><th> </th><th>ODI- Integración de Datos <img src="img/barra-prog.png" height="120"></th>
-           </tr>
-	</tbody>
-</table>
+    <div class="row">
+<div class="col-md-2">
+<p>CSS</p> 
     </div>
+<div class="col-md-3">
+<div class="progress">
+    <div class="progress-bar barra1" style="width: 90%;">
+    </div>
+</div>
+    </div>
+<div class="col-md-2">
+<p>Bootstrap</p> 
+    </div>
+<div class="col-md-3">
+<div class="progress">
+    <div class="progress-bar barra2" style="width: 90%;">
+    </div>
+</div>
+    </div>
+    </div><br>
+<div class="row">
+<div class="col-md-2">
+<p>JavaScript</p> 
+    </div>
+<div class="col-md-3">
+<div class="progress">
+    <div class="progress-bar barra1" style="width: 90%;">
+    </div>
+</div>
+    </div>
+<div class="col-md-2" >
+<p>Balsamiq</p> 
+    </div>
+<div class="col-md-3">
+<div class="progress">
+    <div class="progress-bar barra2" style="width: 80%;">
+    </div>
+</div>
+    </div>
+    </div><br><br>
+    
+    <div class="analisis-datos">
+    <h1>Análisis de Datos</h1><br><br>
+<div class="row">
+<div class="col-md-6">
+<p><b>LENGUAJES</b></p>
+</div>
+<div class="col-md-6">
+<p><b>SOFTWARE</b></p>
+ </div>
+</div><br>
+        
+ <div class="row">
+<div class="col-md-2">
+<p>SQL</p> 
+    </div>
+<div class="col-md-3">
+<div class="progress">
+    <div class="progress-bar barra3" style="width: 90%;">
+    </div>
+</div>
+    </div>
+<div class="col-md-2">
+<p>Hadoop</p> 
+    </div>
+<div class="col-md-3">
+<div class="progress">
+    <div class="progress-bar barra4" style="width: 80%;">
+    </div>
+</div>
+    </div>
+    </div><br>
+    
+    <div class="row">
+<div class="col-md-2">
+<p>SCALA</p> 
+    </div>
+<div class="col-md-3">
+<div class="progress">
+    <div class="progress-bar barra3" style="width: 50%;">
+    </div>
+</div>
+    </div>
+<div class="col-md-2">
+<p>Oracle SQL Developer</p> 
+    </div>
+<div class="col-md-3">
+<div class="progress">
+    <div class="progress-bar barra4" style="width: 70%;">
+    </div>
+</div>
+    </div>
+    </div><br>
+<div class="row">
+<div class="col-md-2">
+<p> </p> 
+    </div>
+<div class="col-md-3">
+
+    <p> </p>
+</div>
+   <div class="col-md-2" >
+<p>ODI</p> 
+    </div>
+<div class="col-md-3">
+<div class="progress">
+    <div class="progress-bar barra4" style="width: 80%;">
+    </div>
+</div>
+    </div>
+    </div>
+        </div> <br><br>  
+    
     
           <div class="visualizacion-datos">
-    <h1>Visualización de Datos</h1>
-    <table>
-	<tbody>
-	   <tr><th>PowerBI <img src="img/barra-prog.png" height="120"></th>
-           </tr>
-		<tr><th>Tableau <img src="img/barra-prog.png" height="120"></th>
-           </tr>
-	</tbody>
-</table>
+    <h1>Visualización de Datos</h1><br><br>
+<div class="row">
+<div class="col-md-2">
+<p>Tableau</p> 
     </div>
+<div class="col-md-3">
+<div class="progress">
+    <div class="progress-bar barra5" style="width: 70%;">
+    </div>
+</div>
+    </div>
+<div class="col-md-2">
+<p>PowerBI</p> 
+    </div>
+<div class="col-md-3">
+<div class="progress">
+    <div class="progress-bar barra6" style="width: 80%;">
+    </div>
+</div>
+               </div>
+        </div>
+        </div><br><br>
+        
+<div class="row">
+		<div class="col-xs-12">
+			<footer>
+				<p>&copy; Copyright 2018 Ana Sabater</p>
+			</footer>
+		</div>
+	</div>             
+    </div>    
 </body>
 
 </html>
