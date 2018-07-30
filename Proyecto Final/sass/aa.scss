@@ -75,7 +75,7 @@ li.active{
 }
 .desarrollo-web { @include estilo-div(#e6eeff); }  
 .analisis-datos { @include estilo-div(#ffe6e6); }
-.visualziacion-datos { @include estilo-div(#f5ccff); }
+.visualizacion-datos { @include estilo-div(#f5ccff); }
 
 @mixin prog-bar($color) {
     background-color: $color;
@@ -95,7 +95,7 @@ li.active{
   }
 }
 .tableau { @include estilo-div(#9999ff); }  
-.analisis-datos { @include estilo-div(#ffff99); }
+.powerbi { @include estilo-div(#ffff99); }
 
 .tableau-logo, .powerbi-logo{
     height: 150px;
