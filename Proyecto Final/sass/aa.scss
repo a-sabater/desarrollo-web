@@ -1,1 +1,102 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body{
+  position: relative;
+  display: block;
+  height: 1000px;
+  overflow-y: scroll;
+  margin: 0;
+  font-size: 28px;
+  background: linear-gradient(to bottom right, #e0e0eb, #ffffff);
+}
+h1{
+    text-align: center;
+    font-weight: bold;
+}
+h2{
+    text-align: left;
+    font-weight: bold;
+}
+p{
+    font-size: 24px;
+}
+p.hint-text{
+    font-size: 18px;
+}
+footer{
+    font-size: 18;
+    background-color:  #29293d;
+    color: white;
+    padding: 30px;
+}
+form{
+    width: 100px;
+   margin-left: 30px;
+}
+.biografia{
+    background-color: white;
+    border: 5px;
+    border-style: solid;
+}
+li.active{
+    font-size: 18px; 
+    text-align: center;
+        }
+#regist{
+    margin-right: 30px;
+}
+.btn.btn-primary {
+    font-size: 18px;
+    color: black;
+    background-color: #5CB85C;
+    background-image: linear-gradient(to bottom, #c4bec4, #e8ede8);
+    border-color: #010301 #010301 #010301;
+    vertical-align: middle;
+}
 
+#logo {
+    margin-top: -8px;
+}
+
+#imgp, #imgp2 { opacity: 1.0;     }
+#imgp.claro, #imgp2.claro{ opacity: 0.6; }
+.img-responsive:hover {
+    transform: scale(1.2);
+}
+
+@mixin estilo-div($color) {
+  background-color: $color;
+  border: {
+    width: 5px;
+    style: dashed;
+  }
+}
+.desarrollo-web { @include estilo-div(#e6eeff); }  
+.analisis-datos { @include estilo-div(#ffe6e6); }
+.visualziacion-datos { @include estilo-div(#f5ccff); }
+
+@mixin prog-bar($color) {
+    background-color: $color;
+}
+.barra1 { @include prog-bar(#0044cc); }
+.barra2 { @include prog-bar(#80aaff); }
+.barra3 { @include prog-bar(#b30000); }
+.barra4 { @include prog-bar(#ff6666); }
+.barra5 { @include prog-bar(#3d004d); }
+.barra6 { @include prog-bar(#b800e6); }
+
+@mixin estilo-div($color) {
+  background-color: $color;
+  border: {
+    width: 5px;
+    style: dotted;
+  }
+}
+.tableau { @include estilo-div(#9999ff); }  
+.analisis-datos { @include estilo-div(#ffff99); }
+
+.tableau-logo, .powerbi-logo{
+    height: 150px;
+    border: 5px;
+    border-style: solid;
+    border-color: black;
+}
