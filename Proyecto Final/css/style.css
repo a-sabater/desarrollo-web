@@ -1,112 +1,118 @@
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-body{
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato", sans-serif; }
+
+body {
   position: relative;
   display: block;
   height: 1000px;
   overflow-y: scroll;
   margin: 0;
   font-size: 28px;
-  background: linear-gradient(to bottom right, #c2c2d6, #ffffff);
-}
-h1{
-    text-align: center;
-    font-weight: bold;
-}
-h2{
-    text-align: left;
-    font-weight: bold;
-}
-p{
-    font-size: 24px;
-}
-p.hint-text{
-    font-size: 18px;
-}
-footer{
-    font-size: 18;
-    background-color:  #29293d;
-    color: white;
-    padding: 30px;
-}
-form{
-    width: 100px;
-   margin-left: 30px;
-}
-.biografia{
-    background-color: white;
-    border: 5px;
-    border-style: solid;
-}
-li.active{
-     font-size: 18px; 
-    text-align: center;
-        }
-#regist{
-    margin-right: 30px;
-}
+  background: linear-gradient(to bottom right, #e0e0eb, #ffffff); }
+
+h1 {
+  text-align: center;
+  font-weight: bold; }
+
+h2 {
+  text-align: left;
+  font-weight: bold; }
+
+p {
+  font-size: 24px; }
+
+p.hint-text {
+  font-size: 18px; }
+
+footer {
+  font-size: 18;
+  background-color: #29293d;
+  color: white;
+  padding: 30px; }
+
+form {
+  width: 100px;
+  margin-left: 30px; }
+
+.biografia {
+  background-color: white;
+  border: 5px;
+  border-style: solid; }
+
+li.active {
+  font-size: 18px;
+  text-align: center; }
+
+#regist {
+  margin-right: 30px; }
+
 .btn.btn-primary {
-    font-size: 18px;
-    color: black;
-    background-color: #5CB85C;
-    background-image: linear-gradient(to bottom, #c4bec4, #e8ede8);
-    border-color: #010301 #010301 #010301;
-    vertical-align: middle;
-}
+  font-size: 18px;
+  color: black;
+  background-color: #5CB85C;
+  background-image: linear-gradient(to bottom, #c4bec4, #e8ede8);
+  border-color: #010301 #010301 #010301;
+  vertical-align: middle; }
 
 #logo {
-    margin-top: -8px;
-}
-.desarrollo-web{
-    background: #e6eeff;
-    border: 5px;
-    border-style: dashed;
-}
-.analisis-datos{
-    background: #ffe6e6;
-    border: 5px;
-    border-style: dashed;   
-}
-.visualizacion-datos{
-    background: #f5ccff;
-    border: 5px;
-    border-style: dashed;    
-}
-.barra1{
- background-color:  #0044cc;   
-}
-.barra2{
-   background-color:  #80aaff;
-}
-.barra3{
-  background-color: #b30000;  
-}
-.barra4{
-    background-color: #ff6666;
-}
-.barra5{
-   background-color: #3d004d; 
-}
-.barra6{
-    background-color: #b800e6;
-}
-#imgp, #imgp2 { opacity: 1.0;     }
-#imgp.claro, #imgp2.claro{ opacity: 0.6; }
+  margin-top: -8px; }
+
+#imgp, #imgp2 {
+  opacity: 1.0; }
+
+#imgp.claro, #imgp2.claro {
+  opacity: 0.6; }
+
 .img-responsive:hover {
-    transform: scale(1.2);
-}
-.tableau{
-    background: #9999ff;
-    border: 5px;
-    border-style: dotted;   
-}
-.powerbi{
-    background: #ffff99;
-    border: 5px;
-    border-style: dotted;   
-}
-.tableau-logo, .powerbi-logo{
-    height: 150px;
-    border: 5px;
-    border-style: solid;
-    border-color: black;
-}
+  transform: scale(1.2); }
+
+.desarrollo-web {
+  background-color: #e6eeff;
+  border-width: 5px;
+  border-style: dashed; }
+
+.analisis-datos {
+  background-color: #ffe6e6;
+  border-width: 5px;
+  border-style: dashed; }
+
+.visualziacion-datos {
+  background-color: #f5ccff;
+  border-width: 5px;
+  border-style: dashed; }
+
+.barra1 {
+  background-color: #0044cc; }
+
+.barra2 {
+  background-color: #80aaff; }
+
+.barra3 {
+  background-color: #b30000; }
+
+.barra4 {
+  background-color: #ff6666; }
+
+.barra5 {
+  background-color: #3d004d; }
+
+.barra6 {
+  background-color: #b800e6; }
+
+.tableau {
+  background-color: #9999ff;
+  border-width: 5px;
+  border-style: dotted; }
+
+.analisis-datos {
+  background-color: #ffff99;
+  border-width: 5px;
+  border-style: dotted; }
+
+.tableau-logo, .powerbi-logo {
+  height: 150px;
+  border: 5px;
+  border-style: solid;
+  border-color: black; }
+
+/*# sourceMappingURL=aa.css.map */
