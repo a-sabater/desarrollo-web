@@ -33,7 +33,9 @@ footer {
 form {
   width: 100px;
   margin-left: 30px; }
-
+.form-group{
+    width: 450px;
+}
 .biografia {
   background-color: white;
   border: 5px;
