@@ -1,0 +1,448 @@
+
+#+TITLE: Examen de JavaScript
+#+AUTHOR: Patricio Martínez
+#+DATE: \today
+#+EMAIL: maxxcan@gmail.com
+
+* Ventajas de jquery 
+:PROPERTIES:
+:points:   
+:END:
+
+1. Salva mucho tiempo, simplifica tareas, fácil de usar
+2. Facilita la corrección de errores, hace el código más legible, ahorra dinero
+3. Facilita la compatibilidad con los navegadores, es software libre, es gratuito.
+4. Hay más de una opción correcta
+5. Todas las opciones anteriores son correctas  [X]
+6. Ninguna opción es correcta
+* Con qué empieza y termina la sintaxis básica en jquery
+:PROPERTIES:
+:points:   
+:END:
+
+1. Empieza con $ y termina con una coma
+2. Empieza con $ y termina con dos puntos
+3. Empieza con $ y termina con punto y coma
+4. Empieza con $ y termina con punto y coma y además usa corchetes [X]
+5. Hay más de una opción correcta 
+6. Todas son correctas
+
+* Veamos el código jquery siguiente: $(document)ready(manejador)
+:PROPERTIES:
+:points:   
+:END:
+
+1. El manejador es una función que actúa cuando el documento es accesible
+2. El manejador es cualquier elemento que actúa sobre el documento
+3. El documento tiene que estar accesible para que actúe el manejador
+4. El método ready es una función anónima
+5. La 1 y la 2 son correctas
+6. La 1 y la 3 son correctas
+7. La 1, la 2 y la 3 son correctas
+8. Hay más de una correcta [X]
+9. Ninguna es correcta 
+
+* Para seleccionar elementos por su clase 
+:PROPERTIES:
+:points:   
+:END:
+
+1. Escribimos la clase precedida de un punto [X]
+2. Escribimos la clase precedida de un espacio en blanco
+3. Escribimos el nombre de la clase
+4. Ninguna de las anteriores 
+
+* Cual es el selector propio de jquery para seleccionar elementos impares
+:PROPERTIES:
+:points:   
+:END:
+
+1. Even
+2. Odd 
+3. even
+4. odd [X]
+5. Hay dos opciones correctas 
+
+* Qué hace el evento hove
+:PROPERTIES:
+:points:   
+:END:
+
+1. Detecta un cambio en un elemento de formulario
+2. Detecta un cambio en el mouse del ordenador
+3. Detecta un cambio cuando el puntero pasa por un elemento
+4. Detecta un cambio cuando el puntero deja un elemento
+5. Hay dos correctas [X]
+6. Ninguna es correcta 
+
+* Qué detecta el  método change()
+:PROPERTIES:
+:points:   
+:END:
+
+1. Un cambio en un elemento <input>
+2. Un cambio en un elemento <textarea> y/o <select>
+3. Un cambio en un formulario
+4. Hay más de una opción correcta [X]
+5. Ninguna es correcta 
+
+* Sobre los método fade() 
+:PROPERTIES:
+:points:   
+:END:
+
+1. Con el fadeIn() podemos mostrar un elemento a distintas velocidades
+2. El fadeTo() a diferencia del fadeIn puede controlar la transparencia
+3. El fadeTo() no puede controlar la velocidad a la hora de mostrar un elemento
+4. El fadeOut() nos oculta un elemento solo si este es precedido de un fadeIn 
+5. La 1 y la 2 son verdaderas [X]
+6. La 1 y la 3 son verdaderas
+7. La 2 y la 4 son verdaderas 
+8. Ninguna es verdadera 
+
+* El método SlideUp
+:PROPERTIES:
+:points:   
+:END:
+
+1. Nos muestra un elemento cambiando su altura [X]
+2. Nos oculta un elemento cambiando su altura
+3. La diferencia con el método SlideToggle() es que con este podemos controlar la opacidad.
+4. Ninguna es correcta 
+
+* Qué hace el método parents()
+:PROPERTIES:
+:points:   
+:END:
+
+1. Selecciona el elemento padre del elemento seleccionado
+2. Selecciona el elemento padre y el abuelo del elemento seleccionado
+3. Selecciona todos los antepasados del elemento seleccionado incluido él mismo
+4. Hay varias opciones verdaderas [X]
+5. Ninguno de las opciones anteriores es verdadera
+
+* Cual es el significado de Sass 
+:PROPERTIES:
+:points:   
+:END:
+
+1. Syntactic Awesome StyleSheets
+2. Syntactic Amazing StyleSheets
+3. StyleSheet Amazing Syntactic
+4. Syntactic Awesome StyleSheet 
+5. Ninguna de las anteriores  [X]
+
+* Para qué sirve el &
+:PROPERTIES:
+:points:   
+:END:
+
+1. Para seleccionar al elemento padre
+2. Para seleccionar al elemento padre en las reglas anidadas [X]
+3. Para seleccionar a todos los elementos
+4. Ninguna de las anteriores
+
+* Cual es el resultado en SassScript de sumar #340011 #ff2233
+:PROPERTIES:
+:points:   
+:END:
+
+1. #white
+2. #ff2233
+3. #ff2244 [X]
+4. #342244
+5. Ninguno de los anteriores
+
+* Qué fórmula dará como resultado "5hola"
+:PROPERTIES:
+:points:   
+:END:
+
+1. 5 + hola
+2. 5 + "hola"
+3. "5" + "hola" [X]
+4. "5" + hola
+5. La 1 y la 3 son correctas
+6. La 2 y la 4 son correctas
+7. La 1, la 2, la 3 y la 4 son correctas
+8. Ninguna es correcta 
+
+* Cual es el resultado de la fórmula #010203 * 3
+:PROPERTIES:
+:points:   
+:END:
+
+1. #010609 [X]
+2. #030608
+3. #030609
+4. Todas la anteriores son correctas
+
+* Qué hace la regla @import "foo";
+:PROPERTIES:
+:points:   
+:END:
+
+1. Importa el archivo foo.scss [X]
+2. Importa todos los archivos foo
+3. Importa el archivo foo.css
+4. Ninguno de los anteriores
+
+* Qué hacemos para que no se compile a css un archivo scss
+:PROPERTIES:
+:points:   
+:END:
+
+1. Ponemos delante un punto para hacerlo oculto (.)
+2. Ponemos delante un asterisco para no importarlo(*)
+3. Indicamos en un fichero aparte los ficheros que no queremos que se compilen. Ese fichero irá con un guión bajo delante (_)
+4. Ponemos un guión bajo delante del archivo (_) [X]
+5. Ninguna de las anteriores
+
+* Con qué directiva hacemos un Mixin 
+:PROPERTIES:
+:points:   
+:END:
+
+1. @mixin  [X]
+2. @Mixin 
+3. #mixin 
+4. Ninguna de las anteriores 
+
+* Qué hace la directiva @include  
+:PROPERTIES:
+:points:   
+:END:
+
+1. Incluye un mixin [X]
+2. Incluye una librería de mixines 
+3. Include cosas 
+4. Incluye cosas bonitas
+
+* Cómo pongo argumentos variables a un mixin
+:PROPERTIES:
+:points:   
+:END:
+
+1. Añadiendo tres puntos suspensivos solamente (...)
+2. Añadiendo tres puntos suspensivos después del último argumento (...) [X]
+3. Añadiendo tres puntos suspensivos antes de los argumentos (...)
+4. Añadiendo una almohadilla después del nombre del mixin
+5. Ninguna de las anteriores
+
+* Qué es Bootstrap  
+:PROPERTIES:
+:points:   
+:END:
+
+1. Un potente framework para front-end [X]
+2. Un conjunto de plantillas de estilo
+3. Un conjunto de ideas de diseño
+4. Un framework pensado para frontend pero que finalmente se usa para hacer ensaladas
+
+* Para qué sirve la clase .xs-col 
+:PROPERTIES:
+:points:   
+:END:
+
+1. Es una clase para equipos pequeños
+2. Es una clase para equipos extra-pequeños [X]
+3. Es una clase para equipos medianos
+4. Ninguna de las anteriores 
+
+* Cual es el máximo de columnas que admite el sistema de rejilla de Bootstrap
+:PROPERTIES:
+:points:   
+:END:
+
+1. 9
+2. 122954
+3. 12 [X]
+4. 3
+
+* Para qué sirve la clase responsiva .visible-xs-
+:PROPERTIES:
+:points:   
+:END:
+
+1. Habilita la visibilidad solo en los dispositivos con una anchura de menos de 768px [X]
+2. Habilita la visibilidad en dispositivos entre 768px y 992px
+3. Oculta los elementos en dispositivos con una anchura de menos 768px 
+4. Ninguna de las anteriores
+
+* Con qué clase ponemos todas las palabras de un texto en mayúsculas en Bootstrap
+:PROPERTIES:
+:points:   
+:END:
+
+1. tex-upercase
+2. txt-uppercase
+3. text-uppercase [X]
+4. Ninguna de las anteriores
+
+* Cómo crear una tabla responsiva en Bootstrap
+:PROPERTIES:
+:points:   
+:END:
+
+1. Añadiendo la clase table-responsive a la etiqueta html <table>
+2. Envolviendo la tabla con un div y añadirle la clase table-responsive [X]
+3. Creando un div dentro de las etiquetas <table> con la clase table-responsive
+4. Ninguna de las anteriores 
+
+* Qué tipos de listas tenemos en Bootstrap
+:PROPERTIES:
+:points:   
+:END:
+
+1. Ordenadas y sin ordenar [X]
+2. Blancas y negras 
+3. Con puntitos negros y sin puntitos negros
+4. Definidas según qué tipos de subgénero sea aquél más adecuado y correcto para el caso en concreto 
+
+* Cómo creamos un formulario horizontal en Bootstrap
+:PROPERTIES:
+:points:   
+:END:
+
+1. Añadiendo la clase .form-horizontal al elemento <form>
+2. Agrupando las etiquetas y los elementos de control del formulario en un elemento <div> y aplicarle la clase .form-group
+3. Usando clases de rejilla predefinidas de Bootstrap para alinear etiquetas y elementos de control
+4. Añadir la clase .control-label al elemento <label>
+5. Hay que hacer todo lo anterior [X]
+6. Todo es incorrecto excepto alguna cosa que es correcta 
+
+* Cómo creamos un formulario horizontal
+:PROPERTIES:
+:points:   
+:END:
+
+1. Añadimos la clase .form-inline al elemento <form> [X]
+2. Señala la de arriba anda que es esa
+3. Que te digo que es la primera
+4. Que sí que es la primera
+5. ¿Aún dudas?
+
+* Si creamos un botón y le añadimos la clase btn-danger en Bootstrap...
+:PROPERTIES:
+:points:   
+:END:
+
+1. El botón será de color rojo [X]
+2. El botón será más grande que cualquier otro
+3. El botón hará ruidos estridentes cuando lo toques
+4. El botón te mirará raro y te saltará a la cara arrancándote los ojos
+
+* Sobre los frameworks, ¿qué son?
+:PROPERTIES:
+:points:   
+:END:
+
+1. Es un conjunto estandarizado de conceptos, prácticas y criterios para enfocar un tipo de problemática particular que sirve como referencia, para enfrentar y resolver nuevos problemas de índole similar. [X]
+2. Un nuevo superhéroe de la Marvel 
+3. Entornos de trabajo que simbolizan la paz mundial
+4. Ninguno de los anteriores 
+
+* Además de Sass que otros preprocesadores de css conoces
+:PROPERTIES:
+:points:   
+:END:
+
+1. Stylus, Less y CleverCss [X]
+2. Boli, More, foolcss 
+3. Css, ACss y BCss 
+4. No conozco a ninguno pero creo que la primera opción es la correcta 
+
+(aquí admito hay dos posibles respuestas correctas)
+* Qué framework javascript crees que es el más adecuado para una aplicación PWA 
+:PROPERTIES:
+:points:   
+:END:
+
+1. VueJS [X]
+2. React
+3. EmberJS
+4. Angular2
+* Con qué Framework propio de Backend es usado VueJS
+:PROPERTIES:
+:points:   
+:END:
+
+1. Laravel
+2. Symphony 
+3. Angular2 [X]
+4. CakePHP
+* Cual es el gestor de paquetes basado en javascript que más se usa
+:PROPERTIES:
+:points:   
+:END:
+
+1. NPM
+2. Polymer
+3. Yarn [X]
+4. Composer
+5. Boot 
+* Cual de estos programas descargan plantillas y nos crean estructuras de directorios
+:PROPERTIES:
+:points:   
+:END:
+
+1. Gulp.js
+2. Grunt
+3. Webpack
+4. Todos los anteriores [X]
+* Qué motor de plantillas web hemos visto en el curso
+:PROPERTIES:
+:points:   
+:END:
+
+1. Thymeleaf
+2. Smarty
+3. Mostache
+4. Ninguno de los anteriores [X]
+* Cual de estos gestores de bases de datos no son relacionales
+:PROPERTIES:
+:points:   
+:END:
+
+1. MariaDB
+2. Postgresql
+3. CouchDB
+4. Mysql 
+5. Todas son relacionales [X]
+* Cual es el sistema operativo más usado en el mundo
+:PROPERTIES:
+:points:   
+:END:
+
+1. GNU\Linux [X]
+2. Windows 
+3. OSX
+4. Haiku
+5. ReactOS
+* Cual es la principal diferencia entre software libre y open source
+:PROPERTIES:
+:points:   
+:END:
+
+1. El primero es gratuito y el segundo no
+2. El primero es cosa de hippies y el segundo de gente seria
+3. El primero da más importancia a la libertad del usuario y el segundo pone en relieve el acceso al código fuente [X]
+4. El primero abraza la libertad y el segundo abraza el dinero
+* Resultados 
+
+#+BEGIN_SRC emacs-lisp 
+(setq total-points 0)    ; counter for the total points
+
+;; now loop over headlines
+(org-element-map 
+    (org-element-parse-buffer 'headline) 'headline 
+  ;; function to print headline title and points
+  (lambda (headline) 
+    (let ((points (org-element-property :POINTS headline))
+          (title  (org-element-property :title headline)))
+      (if points (progn
+                   (setq total-points (+ total-points (string-to-number points)))
+                   (princ (format "title=%s\nPOINTS=%s\n\n" title points)))))))
+
+(princ (format "Puntos totales = %s" total-points))
+#+END_SRC
