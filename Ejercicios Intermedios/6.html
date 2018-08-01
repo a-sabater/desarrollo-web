@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+<title>6. Escribe un programa que nos de una frase a partir de unas palabras introducidas por el usuario</title>
+    </head>
+  <body>
+
+<div id="story">
+  <p>Un objeto:</p>
+    <input type="text" id="thing">
+  <p>Un nombre:</p>
+    <input type="text" id="name">
+  <p>Un adjetivo:</p>
+    <input type="text" id="adjective">
+  <p>Un sustantivo:</p>
+    <input type="text" id="noun">
+</div>
+
+<br/>
+
+  <button id="libbutton" onclick="madLibs()">Create lib</button>
+  <div id="mystory"></div>
+
+<script type="text/javascript">
+      function madLibs() {
+
+  var mystory = document.getElementById("mystory");
+  var thing = document.getElementById("thing").value;
+  var name = document.getElementById("name").value;
+  var adjective = document.getElementById("adjective").value;
+  var noun = document.getElementById("noun").value;
+
+  mystory.innerHTML = "Lo mejor de este mundo es comer " + thing + ". Eso se dijo a sí mismo " + name + ". Nada es tan " + adjective + " como unirlo a un/a " + noun + " y comértelo.";
+}
+      
+      </script>
+</body>
+</html>
