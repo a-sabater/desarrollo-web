@@ -1,0 +1,44 @@
+
+<html>
+    <head>
+    <meta charset="UTF-8">
+        <title>1. Crear una página con una serie de botones dispuestos para cambiar el color de fondo de la página a rojo, verde, azul, amarillo y negro. Cada uno de ellos está rotulado con el nombre del color que activa.</title>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    </head>
+<body>
+    <style type="text/css">
+    
+    </style>
+
+<button class="btn-red">Cambia a rojo</button>
+<button class="btn-green">Cambia a verde</button>
+<button class="btn-blue">Cambia a azul</button>
+<button class="btn-yellow">Cambia a amarillo</button>
+<button class="btn-black">Cambia a negro</button>
+    
+          <script type="text/javascript">
+    $('.btn-red').click(function() {
+    $("body").css("background","red");
+})
+              
+    $('.btn-green').click(function() {
+    $("body").css("background", "green");
+})
+  
+    $('.btn-blue').click(function() {
+    $("body").css("background","blue");
+})
+
+    $('.btn-yellow').click(function() {
+    $("body").css("background","yellow");
+})
+              
+    $('.btn-black').click(function() {
+    $("body").css("background","black");
+})
+  
+</script>
+          
+    
+    </body>
+</html>
