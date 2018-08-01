@@ -1,0 +1,26 @@
+<html>
+<head>
+<meta charset=utf-8>
+<title>5. Realizar un programa que pida cargar una fecha cualquiera, luego verificar si dicha fecha corresponde a Navidad.</title>
+
+</head>
+<body>
+Fecha (dd/mm/yy): <input id="myInput" type="text"><br>
+<button onclick="myFunction()">¿Es Navidad?</button>
+    <p id="demo"></p>
+        <script type="text/javascript">
+var fecha = document.getElementById("myInput").value;
+var dm = fecha.substring(0, 5);
+            
+   function myFunction(){
+if (dm == 25/12) {
+    texto = "Es Navidad";
+} else {
+    texto = "No es Navidad";
+}
+            
+document.getElementById("demo").innerHTML = texto;
+           } 
+    </script>  
+    </body>
+</html>

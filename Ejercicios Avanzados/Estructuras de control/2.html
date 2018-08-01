@@ -1,0 +1,52 @@
+<html>
+<head>
+<meta charset=utf-8>
+<title>2. Igual que el anterior pero que indique si está suspenso o tiene un aprobado, un notable, un sobresaliente o una matricula.</title>
+
+</head>
+<body>
+        <form>
+Tu nota : <input type="text" id="tunota" /><br>
+<input type="button" onClick="show()" Value="Calificación" />
+</form>
+<p><span id = "result"></span></p>
+        
+        <script type="text/javascript">
+function show()
+{
+        nota = document.getElementById("tunota").value;
+    var text = "";
+        switch (nota) {
+            case "0":
+            case "1":
+            case "2":
+            case "3":
+            case "4":
+                text = "Suspenso";
+                break;
+            case "5":
+                text = "Suficiente";
+                break;
+            case 6:
+                text = "Bien";
+                break;
+            case "7":
+            case "8":
+                text = "Notable";
+                break;
+            case "9":
+                text = "Sobresaliente";
+                break;
+            case "10":
+                text = "Matrícula";
+                break;
+            default:
+                text = "Eso no es una nota";
+                }
+        
+        document.getElementById("result").innerHTML = text;
+}
+   
+    </script>  
+    </body>
+</html>

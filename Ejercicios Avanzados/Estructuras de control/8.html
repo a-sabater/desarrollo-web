@@ -1,0 +1,42 @@
+<html>
+<head>
+<meta charset=utf-8>
+<title>8. Hacer un programa que solicite que se ingrese un valor entre 1 y 5. Luego mostrar el valor ingresado. Mostrar un mensaje de error en caso de haber ingresado un valor que no se encuentre en dicho rango. Utilizar estructura switch</title>
+
+</head>
+<body>
+Número entre 1 y 5: <input type="text" id="num" />
+<button onclick="myFunction()">Dale</button>
+    <p id="demo"></p>
+    
+        <script type="text/javascript">
+function myFunction(){
+    var text;
+    var numero = document.getElementById("num").value;
+    switch (numero){
+            case "1":
+                text = "Tu número es 1";
+                break;
+            case "2":
+                text = "Tu número es 2";
+                break;
+            case "3":
+                text = "Tu número es 3";
+                break;
+            case "4":
+                text = "Tu número es 4";
+                break;
+            case "5":
+                text = "Tu número es 5";
+                break;
+            default:
+                text = "Error. Tu número no está entre 1 y 5.";
+                }
+        
+document.getElementById("demo").innerHTML = text;
+    }
+            
+            
+    </script>  
+    </body>
+</html>

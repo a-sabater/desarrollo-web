@@ -1,0 +1,32 @@
+<html>
+<head>
+<meta charset=utf-8>
+<title>3. Hacer un programa donde se solicite dos veces la contraseña a un usuario y se compruebe que es la misma.</title>
+
+</head>
+<body>
+Contraseña: <input id="myInput" type="text"><br>
+Repite la contraseña: <input id="myInput2" type="text"><br>
+<button onclick="myFunction()">Comprobación</button>
+
+<p id="demo"></p>
+        
+        <script type="text/javascript">
+function myFunction()
+{
+var text;
+var pass = document.getElementById("myInput").value;
+var pass2 = document.getElementById("myInput2").value;
+
+    if (pass == pass2) {
+        text = "Válido";
+    } else {
+        text = "No válido";
+    }
+        
+document.getElementById("demo").innerHTML = text;
+}
+   
+    </script>  
+    </body>
+</html>

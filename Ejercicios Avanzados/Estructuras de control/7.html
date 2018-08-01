@@ -1,0 +1,34 @@
+<html>
+<head>
+<meta charset=utf-8>
+<title>7. Se carga una fecha (día, mes y año) por teclado. Mostrar un mensaje si corresponde al primer trimestre del año (enero, febrero o marzo).Cargar por teclado el valor numérico del día, mes y año por separado.</title>
+
+</head>
+<body>
+Día: <input type="text" id="day" />
+Mes: <input type="text" id="month" />
+Año: <input type="text" id="year" />  
+<button onclick="myFunction()">Trimestre</button>
+    <p id="demo"></p>
+    
+        <script type="text/javascript">
+function myFunction(){
+    var text;
+    var mes = document.getElementById("month").value;
+    switch (mes){
+            case "1":
+            case "2":
+            case "3":
+                text = "Primer trimestre";
+                break;
+            default:
+                text = "No es el primer trimestre";
+                }
+        
+document.getElementById("demo").innerHTML = text;
+    }
+            
+            
+    </script>  
+    </body>
+</html>

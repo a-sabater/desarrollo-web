@@ -1,0 +1,45 @@
+<html>
+<head>
+<meta charset=utf-8>
+<title>1. Hacer un programa donde introduzcamos la nota de un alumno y nos diga si está aprobado o suspenso</title>
+
+</head>
+<body>
+Tu nota:<input id="myInput" type="text"><br>
+
+<button onclick="myFunction()">Calificación</button>
+
+<p id="demo"></p>
+        
+        <script type="text/javascript">
+function myFunction()
+{
+var text;
+var nota = document.getElementById("myInput").value;
+
+        switch (nota) {
+            case "0":
+            case "1":
+            case "2":
+            case "3":
+            case "4":
+                text = "Suspenso";
+                break;
+            case "5":
+            case "6":
+            case "7":
+            case "8":
+            case "9":
+            case "10":
+                text = "Aprobado";
+                break;
+            default:
+                text = "Eso no es una nota";
+                }
+        
+document.getElementById("demo").innerHTML = text;
+}
+   
+    </script>  
+    </body>
+</html>
