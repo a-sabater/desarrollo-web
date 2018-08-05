@@ -58,12 +58,12 @@
 				<a data-toggle="dropdown" class="btn btn-primary dropdown-toggle get-started-btn mt-1 mb-1" href="#">Login</a>
 				<ul class="dropdown-menu form-wrapper">					
 					<li>
-						<form action="/examples/actions/confirmation.php" method="post">
+						<form class="log" action="/examples/actions/confirmation.php" method="post">
 							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Username" required="required">
+								<input type="text" class="form-control" placeholder="Usuario" required="required">
 							</div>
 							<div class="form-group">
-								<input type="password" class="form-control" placeholder="Password" required="required">
+								<input type="password" class="form-control" placeholder="Contraseña" required="required">
 							</div>
 							<input type="submit" class="btn btn-primary btn-block" value="Login">
 							<div class="form-footer">
@@ -77,18 +77,18 @@
 				<a href="#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle get-started-btn mt-1 mb-1" id="regist">Regístrate</a>
 				<ul class="dropdown-menu form-wrapper">					
 					<li>
-						<form action="/examples/actions/confirmation.php" method="post">
+						<form class="reg" action="/examples/actions/confirmation.php" method="post">
 							<p class="hint-text">Rellena tus datos para registrarte</p>
-							<div class="form-group">
+							<div class="f-group">
 								<input type="text" class="form-control" placeholder="Usuario" required="required">
 							</div>
-							<div class="form-group">
+							<div class="f-group">
 								<input type="password" class="form-control" placeholder="Contraseña" required="required">
 							</div>
-							<div class="form-group">
+							<div class="f-group">
 								<input type="password" class="form-control" placeholder="Confirmar contraseña" required="required">
 							</div>
-							<div class="form-group">
+							<div class="f-group">
 								<label class="checkbox-inline"><input type="checkbox" required="required"> Acepto los <a href="#">Términos &amp; Condiciones</a></label>
 							</div>
 							<input type="submit" class="btn btn-primary btn-block" value="Sign up">
@@ -128,7 +128,7 @@
        </div>
        
       <div class="message col-md-6 col-md-offset-1">
-          <form>
+          
     <div class="form-group">
 <label for="Name">Nombre</label>
 <input type="name" class="form-control" id="Name" placeholder="Name">
@@ -143,7 +143,7 @@
                 </div>
  
 <button type="submit" class="btn btn-info">Enviar</button>
-</form>
+
     </div>
     </div>
     
