@@ -4,44 +4,77 @@ body, h1, h2, h3, h4, h5, h6 {
 body {
   position: relative;
   display: block;
-  height: 1000px;
-  overflow-y: scroll;
   margin: 0;
   font-size: 28px;
-  background: linear-gradient(to bottom right, #e0e0eb, #ffffff); }
+  background: white; 
+}
 
 h1 {
   text-align: center;
-  font-weight: bold; }
+  font-weight: bold; 
+    margin-top: 20px;
+}
+
 
 h2 {
   text-align: left;
   font-weight: bold; }
-
+p.subtitle{
+  text-align: center; 
+}
 p {
-  font-size: 24px; }
+  font-size: 20px; 
+}
 
 p.hint-text {
   font-size: 18px; }
-
+nav.navbar{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+hr.divider {
+    border-bottom: 1px;
+    border-style: solid;
+    border-color: #666699;
+}
 footer {
-  font-size: 18;
+  font-size: 15;
   background-color: #29293d;
   color: white;
   padding: 30px; }
 
 form {
   width: 100px;
-  margin-left: 30px; }
+  margin-left: 0; }
 .form-group{
     width: 450px;
 }
+div.contact{
+    border: 5px;
+    border-color: black;
+    border-style: double;
+    text-decoration: underline;
+}
+a.contact{
+        color: #000080;
+}
+img.contact{
+    padding: 5px;
+}
+.btn.btn-info {
+    color: #ffffff;
+    font-size: 18;
+    background-color: #5BC0DE;
+    background-image: linear-gradient(to bottom, #3d3d5c, #7575a3);
+    border-color: #050505 #050505 #050505;
+}
 .biografia {
-  background-color: white;
+  background-color: #f0f0f5;
   border: 5px;
   border-style: solid; }
 
-li.active {
+li.nav-link {
   font-size: 18px;
   text-align: center; }
 
@@ -50,9 +83,9 @@ li.active {
 
 .btn.btn-primary {
   font-size: 18px;
-  color: black;
+  color: #000000;
   background-color: #5CB85C;
-  background-image: linear-gradient(to bottom, #c4bec4, #e8ede8);
+  background-image: linear-gradient(to bottom, #3d3d5c, #47476b);
   border-color: #010301 #010301 #010301;
   vertical-align: middle; }
 
@@ -64,25 +97,24 @@ li.active {
 
 #imgp.claro, #imgp2.claro {
   opacity: 0.6; }
-
-.img-responsive:hover {
-  transform: scale(1.2); }
-
-.desarrollo-web {
-  background-color: #e6eeff;
-  border-width: 5px;
-  border-style: dashed; }
-
-.analisis-datos {
-  background-color: #ffe6e6;
-  border-width: 5px;
-  border-style: dashed; }
-
-.visualizacion-datos {
-  background-color: #f5ccff;
-  border-width: 5px;
-  border-style: dashed; }
-
+img.project{
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+}
+img.zoom:hover {
+  transform: scale(1.2); 
+  z-index: 1;
+}
+img.arrow{
+    width: 15%;
+ box-shadow: 0 4px 8px 0 #d1d1e0, 0 6px 20px 0 #d1d1e0;
+}
+.progress.progress-bar{
+    border: 10px;
+    border-color: black;
+    border-style: solid;
+}
 .barra1 {
   background-color: #0044cc; }
 
@@ -101,20 +133,14 @@ li.active {
 .barra6 {
   background-color: #b800e6; }
 
-.tableau {
-  background-color: #9999ff;
-  border-width: 5px;
-  border-style: dotted; }
-
-.powerbi {
-  background-color: #ffff99;
-  border-width: 5px;
-  border-style: dotted; }
-
 .tableau-logo, .powerbi-logo {
   height: 150px;
-  border: 5px;
-  border-style: solid;
-  border-color: black; }
-
-/*# sourceMappingURL=aa.css.map */
+box-shadow: 0 4px 8px 0 #a3a3c2, 0 6px 20px 0 #a3a3c2; }
+div.message{
+    background-color: #d1d1e0;
+    align-content: center;
+    width: 480;
+    border: 1px;
+    border-color: #3d3d5c;
+    border-style: solid;
+}
