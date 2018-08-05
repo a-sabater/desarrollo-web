@@ -9,22 +9,33 @@
     
     <link rel="stylesheet" href="css/style.css">
     
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
     <div class="navbar-header">
+        <div class="col-md-2">
   <a id= "logo" class="navbar-brand" href="#"><img src="img/logo2.JPG" alt="Ana Sabater" height="35" class="img-rounded"></a>
+        </div>
           </div>
+        <div class="col-md-4">
         <ul class="nav navbar-nav">
-    <li class="active">
+    <li class="nav-link active">
       <a href="index.html" target="_blank">Sobre mí</a>
     </li>
-    <li class="active">
-      <a href="portfolio.html" target="_blank">Portfolio</a>
+    <li class="nav-link">
+      <a data-toggle="dropdown" href="portfolio.html" target="_blank">Portfolio
+    <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="proyectos-datos.html">Proyectos Análisis de Datos</a></li>
+          <li><a href="proyectos-web.html">Proyectos Web</a></li>
+        </ul>
     </li>
-      <li class="active">
+      <li class="nav-link">
       <a href="contacto.html" target="_blank">Contacto</a>
       </li>
               </ul>
+        </div>
         <div class="iconos">
+        <div class="col-md-3">
      <ul class="nav navbar-nav navbar-right">
     <li><a class="navbar-brand" href="mailto:a.sabater411@gmail.com" target="_blank">
     <img src="img/gmail.png" alt="Gmail" title="Envíame un email" width="30">
@@ -38,8 +49,10 @@
       <li><a class="navbar-brand" href="https://drive.google.com/file/d/1G8i3-0PAuaQ6DAJGUWW8KyKzNVFwDwu5/view?usp=sharing" target="_blank">
     <img src="img/pdf.png" alt="PDF" title="Mi CV en PDF" width="30">
           </a> </li>    </ul>  </div>
+        </div>
     
         <div class="formulario">
+            <div class="col-md-3">
    <ul class="nav navbar-nav navbar-right ml-auto">			
 			<li class="nav-item">
 				<a data-toggle="dropdown" class="btn btn-primary dropdown-toggle get-started-btn mt-1 mb-1" href="#">Login</a>
@@ -85,26 +98,34 @@
 			</li>
 		</ul>
         </div>
-
+        </div>
+        </div>
 </nav>
     
   <title>Ana Sabater Aguado- Mis Proyectos Web</title>
     <br><br>
 </head>
 <body>
-    <h1> Mis Proyectos web</h1><br><br>
+    <div class="flecha">
+    <a href="portfolio.html" target="_blank">
+    <img class="img-responsive arrow" src="img/arrow-porfolio.png" alt="Volver a Porfolio" title="Volver a Porfolio">
+            </a>
+    </div>
+    
+    <div class="web">
+    <h1 class="titulo center-block"> Mis Proyectos web</h1><br><br>
     <div class="row">
-    <div class= proyectos-web>
-        <div class="col-md-5 col-md-offset-1">
+            <div class="col-md-5 col-md-offset-1">
         <a href="calculadora2.html" target="_blank">
-    <img class="img-responsive" src="img/calculadora.JPG" alt="Calculadora" title="Calculadora">
+    <img class="img-responsive project zoom" src="img/calculadora.JPG" alt="Calculadora" title="Calculadora">
             </a></div>
         <div class="col-md-5">
     <a href="animacionReverse.html">
-    <img class="img-responsive" src="img/animate.png" alt="Animación" title="Animación5">
+    <img class="img-responsive project zoom" src="img/animate.png" alt="Animación" title="Animación5">
          </a>
         </div>
-        </div> </div> 
+        </div> 
+    </div> 
         <br>
 
 
