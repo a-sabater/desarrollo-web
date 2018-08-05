@@ -45,10 +45,12 @@ footer {
   padding: 30px; }
 
 form {
-  width: 100px;
+  width: 200px;
   margin-left: 0; }
-.form-group{
-    width: 450px;
+
+form.log, form.reg{
+    width: 150px;
+    margin-left: 5px;
 }
 div.contact{
     border: 5px;
